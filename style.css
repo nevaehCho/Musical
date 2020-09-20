@@ -1,0 +1,43 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin:0;
+  border-bottom: 1px dashed pink;
+  padding:10px;
+}
+#grid ol{
+  width:120px;
+  border-right: 1px dotted pink;
+  margin:0;
+  padding-right: 0;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 135px 1fr;
+}
+#lyrics{
+  padding-left:50px;
+}
+#num{
+  color: pink;
+}
+@media(max-width:700px) {
+  #grid{
+    display: block;
+  }
+  #grid ol{
+    border-right: none;
+  }
+  #lyrics{
+    padding: 0;
+  }
+  h1{
+    border-bottom: none;
+  }
+}
